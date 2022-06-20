@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.play_box{
+    margin-top: 30px;
+    width: 400px;
+    height: 400px;
+    background-color: #FFFB7D;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 2px dashed #5a168a;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.cell{
+    font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    height: 120px;
+    cursor: pointer;
+    border-radius: 20px;
+    /* border: 1px dashed #5a168a; */
+    background-color: #85FFBD;
+}
+
+.score {
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.player_score {
+    text-align: center;
+    color: #5a168a;
+}
+
+.number {
+    font-size: 1.6rem;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #5a168a;
+    width: 80px;
+    background-color: #FFFB7D;
+}
+
+.cta {
+    display: flex;
+    gap: 140px;
+}
+
+.button {
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #85FFBD;
+    color: #5a168a;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: 2px dashed #5a168a;
+    text-align: center;
+}
+
+.reset {
+    display: flex;
+    align-items: center;
+}
+
+.win_line {
+    display: none;
+    height: 6px;
+    border-radius: 6px;
+    width: 380px;
+    position: relative;
+    background-color: #5a168a;
+    transform: rotate(90deg);
+    top: -204px;
+    justify-self: center;
+    align-self: center;
+}
